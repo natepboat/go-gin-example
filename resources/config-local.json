@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name":"gin-example-local",
+    "version": "1.0",
+    "port": ":9001"
+  },
+  "writer":"admin-local"
+}

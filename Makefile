@@ -5,6 +5,7 @@ test:
 coverage:
 	go test ./... -cover
 clean:
+	go clean
 	rm -r build
 compile:
 	mkdir -p build
@@ -12,3 +13,5 @@ compile:
 build: clean test compile
 run:
 	./build/gin-example
+run-local:
+	./build/gin-example --env=local
