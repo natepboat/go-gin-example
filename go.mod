@@ -7,7 +7,7 @@ require github.com/gin-gonic/gin v1.8.2
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
-	github.com/natepboat/go-app-env v0.0.0-20230219103719-384a43923823 // indirect
+	github.com/natepboat/go-app-env v1.0.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

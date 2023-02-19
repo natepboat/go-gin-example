@@ -10,20 +10,15 @@ import (
 )
 
 func main() {
-	config := initApp()
-	log.Println(config)
-
-	runServer(config)
-}
-
-func initApp() map[string]interface{} {
 	app := goappenv.NewAppEnv(os.DirFS("."))
-	return app.Config()
+	log.Println(app)
+
+	runServer(app)
 }
 
-func runServer(cfg map[string]interface{}) {
+func runServer(app *goappenv.AppEnv) {
 	router := gin.Default()
 	router.GET("/albums", service.ListAlbum)
 
-	router.Run(cfg["app.port"].(string))
+	router.Run(app.Config()["app.port"].(string))
 }
